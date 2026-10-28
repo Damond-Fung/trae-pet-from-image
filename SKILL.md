@@ -5,6 +5,8 @@ description: 通过一次入口选择，自动路由新增、切换、调整或�
 
 # 一张图换 TRAE 桌宠
 
+发布前必读 [素材与视线质量检查](references/visual-quality.md)：busy/superbusy默认必须有可见电脑或键盘，不允许抬爪敲空气。视线映射以屏幕实际方向和每个角色颈部锚点为准，不能按head-left文件名或复用其他角色坐标盲接。道具缺失、反向注视、头颈接缝/尺度错配任一出现，停止部署并针对性修复。模拟测试全通过不代替视觉验收。
+
 版本：2.1。先读 [入口路由与皮肤库](references/routing-library.md) 和 [闲置规则](references/idle-policy.md)。本版不要求用户记命令，不逐图提问。
 
 后台启动修复：定时任务必须直接执行pythonw.exe及稳定用户目录中的silent-update.pyw，不准用powershell/cmd/python.exe或项目内脚本作为任务入口；缺pythonw时不注册。只配置任务Hidden属性不能隐藏控制台。已有终端闪现时先运行scripts/repair-terminal-popup.ps1备份并停用本技能旧任务，再验证bundle后用修复版注册。停用后明确告知自动恢复暂时暂停，不改变当前宠物。
