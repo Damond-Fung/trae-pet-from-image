@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.trae-pet/
+.env*
+!.env.example
+*.log
+backup/
